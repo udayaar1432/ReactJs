@@ -1,15 +1,22 @@
 
 import './App.css';
-// import Result from './header';
+import Result from './main';
 import Header from './header';
-import Login from './main';
-const App = () => {
-  return (
-    <div class='appbody' >
-      <Login />
+import Output from './newsletter/main';
+// import Login from './main';
+// import Header from "./images"
+
+const App = () => (
+  <div>
+    <div className='appbody' >
       <Header />
+      <Result />
     </div>
-  )
-}
+
+    <div className='newsbody'>
+      <Output />
+    </div>
+  </div>
+)
 export default App;
 

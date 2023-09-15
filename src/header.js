@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <div >
-                <h1 class="h1">Welcome React bank</h1>
+                <h1 className="h1">Welcome React bank</h1>
 
                 <select id="option">
                     <option value="personal react loan">personal react loan</option>
@@ -18,7 +18,6 @@ const Header = () => {
         </header>
     )
 }
-
 
 
 

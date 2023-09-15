@@ -1,19 +1,44 @@
+import img1 from "./images/html-editor-.png"
+import img2 from "./images/CSS-Logo.png"
+import img3 from "./images/OIP (1).jpg"
+import img4 from "./images/OIP (2).jpg"
+
 const Login = () => {
     return (
-        <div class="login">
+        <div className="login">
             <form >
                 <h3>you want loan just login</h3>
                 <div >
-                    <input class="input" type="email" placeholder="Email address" required />
+                    <input className="input" type="email" placeholder="Email address" required />
                 </div>
                 <div >
-                    <input class="input" type="password" placeholder="Password" required />
+                    <input className="input" type="password" placeholder="Password" required />
                 </div>
-                <button class="button">submit</button>
+                <button className="button">submit</button>
             </form>
             <p> forgot your email or password </p>
         </div>
     )
 }
 
-export default Login;
+const Icons = () => {
+    return (
+
+        <div >
+            <img className="imag" src={img1} alt="nature" />
+            <img className="imag" src={img2} alt="nature" />
+            <img className="imag" src={img3} alt="nature" />
+            <img className="imag" src={img4} alt="nature" />
+        </div>
+    )
+}
+
+
+
+const Result = () => (
+    <div>
+        <Login />
+        <Icons />
+    </div>
+)
+export default Result;
